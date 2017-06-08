@@ -1,0 +1,51 @@
+title: ТСЖ «Вымпел»
+description: Официальный сайт товарищества в Ульяновске
+email: inbox@vympel73.ru
+baseurl: ""
+url: "https://vympel73.ru"
+lang: ru
+
+# Build settings
+markdown: kramdown
+
+# Gems
+gems:
+  - jekyll-sitemap
+  - jekyll-paginate
+  - jekyll-gist
+  - jemoji
+
+# Sass settings
+sass:
+    style: :compressed
+
+analytics:
+  google:
+    tracking_code: UNKNOWN
+  yandex:
+    tracking_code: UNKNOWN
+
+contacts:
+  phone: +79278268323
+  email: inbox@vympel73.ru
+
+paginate: 5
+paginate_path: "/article/page:num/"
+
+# Collections
+collections:
+  pages:
+    output: true
+    permalink: :path
+
+# Defaults
+defaults:
+  - scope:
+      type: posts
+    values:
+      layout: post
+      permalink: /article/:year/:month/:day/:title.html
+  - scope:
+      type: pages
+    values:
+      layout: page

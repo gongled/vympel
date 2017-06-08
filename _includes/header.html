@@ -1,0 +1,36 @@
+<div class="layout__floor header">
+<div class="js-cover blog-title">
+  <div class="title">
+    <h1>
+      <span class="text-bg">
+        <span class="text-bg__inner">
+          {% if page.id == "index" %}
+          <span id="vm-blog-title">{{ site.title }}</span>
+          {% else %}
+          <span id="vm-blog-title"><a href="/">{{ site.title }}</a></span>
+          {% endif %}
+        </span>
+      </span>
+    </h1>
+  </div>
+
+  <div class="description">
+    <span id="vm-blog-description">{{ site.description }}</span>
+  </div>
+
+  <ul class="menu">
+    <li>
+      <a href="{{ "/about.html" | prepend: site.baseurl }}" class="">О нас</a>
+    </li>
+    <li>
+      <a href="{{ "/tariffs.html" | prepend: site.baseurl }}" class="">Тарифы</a>
+    </li>
+    <li>
+      <a href="{{ "/docs.html" | prepend: site.baseurl }}" class="">Документы</a>
+    </li>
+    <li>
+      <a href="{{ "/contacts.html" | prepend: site.baseurl }}" class="">Контакты</a>
+    </li>
+  </ul>
+</div>
+</div>

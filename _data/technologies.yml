@@ -1,0 +1,76 @@
+- title: Веб-серверы и балансировщики
+  tags:
+    - NGINX
+    - Apache
+    - HAProxy
+
+- title: Базы данных и брокеры
+  tags:
+    - MySQL
+    - PostgreSQL
+    - Redis
+    - InfluxDB
+    - ElasticSearch
+    - Kafka
+    - Zookeeper
+
+- title: Виртуализация и контейнеризация
+  tags:
+    - VMWare ESXi
+    - VirtualBox
+    - Qemu/KVM
+    - Xen
+    - OpenVZ
+    - Docker
+    - Vagrant
+    - Packer
+
+- title: Сбор данных и визуализация
+  tags:
+    - Zabbix
+    - Grafana
+    - Kibana
+    - Logstash
+    - Filebeat
+    - Flume
+
+- title: Разработка и тестирование
+  tags:
+    - PHP
+    - Python
+    - LaTeX
+    - Shell
+    - Makefile
+    - Git
+    - Tsung
+    - jMeter
+    - Jenkins
+    - Yandex Tank
+    - Capistrano
+
+- title: Инфраструктура
+  tags:
+    - Samba
+    - Bacula
+    - BIND
+    - EJabberd
+    - DHCP
+    - OpenLDAP
+    - Postfix
+    - Dovecot
+    - Amavis
+    - OpenDKIM
+    - IPSec
+    - RPM
+
+- title: Облачные вычисления
+  tags:
+    - Amazon AWS
+    - Google Cloud
+    - Terraform
+    - Otto
+
+- title: Управление конфигурациями
+  tags:
+    - Ansible
+    - SaltStack

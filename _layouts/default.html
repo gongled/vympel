@@ -1,0 +1,58 @@
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta content="{{ site.title }}" property="og:site_name">
+  {% if page.title %}
+    <meta content="{{ page.title }}" property="og:title">
+  {% else %}
+    <meta content="{{ site.title }}" property="og:title">
+  {% endif %}
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+
+  <link rel="stylesheet" type="text/css" href="{{ "/assets/css/main.css" | prepend: site.baseurl }}">
+  <link rel="stylesheet" type="text/css" href="{{ "/assets/css/fresh.css" | prepend: site.baseurl }}">
+  <link rel="stylesheet" type="text/css" href="{{ "/assets/css/highlights.css" | prepend: site.baseurl }}">
+
+  <link rel="alternate" type="application/rss+xml" title="АП" href="rss">
+
+  <link rel="index" id="link-index" href="">
+  <link rel="prev" id="link-earlier" href="">
+
+  <meta name="robots" content="index, follow">
+  {% if page.description %}
+    <meta name="description" content="{{ page.description }}">
+    <meta content="{{ page.description }}" property="og:description">
+  {% else %}
+    <meta name="description" content="{{ site.description }}">
+    <meta content="{{ site.description }}" property="og:description">
+  {% endif %}
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+
+<!--[if lt IE 9]>
+  <style> article { display: block; } </style>
+  <script> document.createElement('article'); </script>
+<![endif]-->
+
+{% if page.title %}
+<title>{{ page.title }} - {{ site.title }}</title>
+{% else %}
+<title>{{ site.title }}</title>
+{% endif %}
+
+</head>
+
+<body style="pointer-events: auto;">
+
+<div id="layout-root" class="layout layout--frontpage">
+  {% include header.html %}
+
+  <div class="layout__floor content">
+    {{ content }}
+  </div>
+
+  {% include footer.html %}
+</div>
+
+</body>
+</html>

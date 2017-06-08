@@ -1,0 +1,29 @@
+---
+layout: default
+---
+
+<div class="js-cover note-title-date">
+  <div class="vm-note-date">
+    <span class="text-bg">
+      <span class="text-bg__inner">{{ page.date | localize: "%-d %B %Y года" }}</span>
+    </span>
+  </div>
+
+  <h3 class="vm-published vm-smart-title vm-note-title">
+    <span class="text-bg">
+      <span class="text-bg__inner">
+        {{ page.title }}
+        <span style="white-space: nowrap"></span>
+      </span>
+    </span>
+  </h3>
+  <div class="vm-note-text vm-text js-cover-lead"></div>
+</div>
+
+<article class="vm-note-text vm-text vm-published">
+  {{ content }}
+</article>
+
+<footer class="mb4">
+  <p><em>Отправляйте вопросы и комментарии на почту <a href="mailto:inbox@vympel73.ru">inbox@vympel73.ru</a>.</em></p>
+</footer>

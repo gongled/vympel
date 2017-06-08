@@ -1,0 +1,27 @@
+---
+layout: default
+---
+
+<div class="js-cover note-title-date">
+  <div class="vm-note-date">
+    {% if page.updated %}
+    <span class="text-bg">
+      <span class="text-bg__inner">Обновлено {{ page.updated | localize: "%-d %B %Y года" }}</span>
+    </span>
+    {% endif %}
+  </div>
+
+  <h3 class="vm-published vm-smart-title vm-note-title">
+    <span class="text-bg">
+      <span class="text-bg__inner">
+        {{ page.title }}
+        <span style="white-space: nowrap"></span>
+      </span>
+    </span>
+  </h3>
+  <div class="vm-note-text vm-text js-cover-lead"></div>
+</div>
+
+<article class="vm-note-text vm-text vm-published">
+  {{ content }}
+</article>

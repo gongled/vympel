@@ -1,0 +1,43 @@
+---
+layout: default
+id: index
+title: Главная страница
+---
+
+{% for post in paginator.posts %}
+<div class="js-cover note-title-date">
+  <div class="vm-note-date">
+    <span class="text-bg">
+      <span class="text-bg__inner">{{ post.date | localize: "%-d %B %Y года" }}</span>
+    </span>
+  </div>
+
+  <h3 class="vm-published vm-smart-title vm-note-title">
+    <span class="text-bg">
+      <span class="text-bg__inner">
+        <a href="{{ post.url }}">{{ post.title }}</a>
+        <span style="white-space: nowrap"></span>
+      </span>
+    </span>
+  </h3>
+</div>
+
+<article class="vm-note-text vm-text vm-published">
+  {{ post.content }}
+</article>
+{% endfor %}
+
+{% if paginator.total_pages > 1 %}
+<div class="vm-pages">
+  Страницы:
+  {% for page in (1..paginator.total_pages) %}
+    {% if page == paginator.page %}
+      {{ page }}
+    {% elsif page == 1 %}
+      <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">{{ page }}</a>
+    {% else %}
+      <a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
+    {% endif %}
+  {% endfor %}
+</div>
+{% endif %}
