@@ -18,12 +18,8 @@ title: Главная страница
 
 <article class="vm-note-text vm-text">
     <ul style="line-height: 1.2; padding-left: 0px;">
-      <li>Работаем по будням с 08:00 до 17:00.</li>
-      <li><br></li>
-      <li>Адрес: {{ site.contacts.address }}</li>
       <li>Председатель: {{ site.contacts.leader }}</li>
       <li>Рабочий телефон: <a href="tel:{{ site.contacts.work_phone }}">+{{ site.contacts.work_phone }}</a></li>
-      <li>Мобильный телефон: <a href="tel:{{ site.contacts.personal_phone }}">+{{ site.contacts.personal_phone }}</a></li>
       <li>Электронная почта: <a href="mailto:{{ site.contacts.email }}">{{ site.contacts.email }}</a></li>
     </ul>
 </article>
@@ -44,13 +40,9 @@ title: Главная страница
 
 <article class="vm-note-text vm-text">
     <ul style="line-height: 1.2; padding-left: 0px;">
-      <li>ИНН/КПП: 7325136046/732501001</li>
+      <li>ИНН: 7325136046</li>
+      <li>КПП: 732501001</li>
       <li>ОГРН: 1157325002548</li>
-      <li>р/с: 40821810720240000045</li>
-      <li>г. Ульяновск, улица Кузнецова, 5а</li>
-      <li>Филиал Банка ВТБ (ПАО), г. Нижний Новгород</li>
-      <li>БИК: 042202837</li>
-      <li>к/с: 30101810200000000837</li>
     </ul>
 </article>
 </div>
@@ -59,7 +51,26 @@ title: Главная страница
   <h3 class="vm-published vm-smart-title vm-note-title">
     <span class="text-bg">
       <span class="text-bg__inner">
-        Карты
+        Адрес
+        <span style="white-space: nowrap"></span>
+      </span>
+    </span>
+  </h3>
+  <div class="vm-note-text vm-text js-cover-lead">{{ site.contacts.address }}</div>
+</div>
+
+<article class="vm-note-text vm-text">
+  <div class="vm-note-text vm-text js-cover-lead"></div>
+  <iframe src="https://api-maps.yandex.ru/frame/v1/-/CBQ4z0f7xC" width="100%" height="400" frameborder="0"></iframe>
+</article>
+
+
+<div class="contacts-leftbar">
+<div class="js-cover note-title-date">
+  <h3 class="vm-published vm-smart-title vm-note-title">
+    <span class="text-bg">
+      <span class="text-bg__inner">
+        Расчётный счёт
         <span style="white-space: nowrap"></span>
       </span>
     </span>
@@ -68,9 +79,37 @@ title: Главная страница
 </div>
 
 <article class="vm-note-text vm-text">
-  <div class="vm-note-text vm-text js-cover-lead"></div>
-  <iframe src="https://api-maps.yandex.ru/frame/v1/-/CBQ4z0f7xC" width="100%" height="400" frameborder="0"></iframe>
+    <ul style="line-height: 1.2; padding-left: 0px;">
+      <li>р/с: 40703810000230002937</li>
+      <li>Казанский филиал ПАО АКБ «Связь-Банк», г. Казань</li>
+      <li>БИК: 049205737</li>
+      <li>к/с: 30101810000000000737</li>
+    </ul>
 </article>
+</div>
+
+<div class="contacts-rightbar">
+<div class="js-cover note-title-date">
+  <h3 class="vm-published vm-smart-title vm-note-title">
+    <span class="text-bg">
+      <span class="text-bg__inner">
+        Капитальный ремонт
+        <span style="white-space: nowrap"></span>
+      </span>
+    </span>
+  </h3>
+  <div class="vm-note-text vm-text js-cover-lead"></div>
+</div>
+
+<article class="vm-note-text vm-text">
+    <ul style="line-height: 1.2; padding-left: 0px;">
+      <li>р/с: 40821810720240000045</li>
+      <li>Филиал Банка ВТБ (ПАО), г. Нижний Новгород</li>
+      <li>БИК: 042202837</li>
+      <li>к/с: 30101810200000000837</li>
+    </ul>
+</article>
+</div>
 
 <div class="js-cover note-title-date">
   <h3 class="vm-published vm-smart-title vm-note-title">
@@ -86,6 +125,6 @@ title: Главная страница
 
 <article class="vm-note-text vm-text">
   <p>
-  Если вы нашли ошибку, напишите нам на <a href="mailto:{{ site.contacts.email }}">электронную почту</a>. С удовольствием читаем всё, что нам присылают.
-  </p>
+  Если вы нашли ошибку, напишите нам на <a href="mailto:{{ site.contacts.email }}">электронную почту</a>.
+</p>
 </article>
