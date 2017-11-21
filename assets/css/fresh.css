@@ -390,7 +390,7 @@ img.upyachka {
 .vm-text ol,
 .vm-text blockquote {
   margin-left: 0;
-  padding-left: 3em;
+  padding-left: 1.5em;
 }
 .vm-text p + ul, .vm-text p + ol {
   margin-top: 0.5em;
