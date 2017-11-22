@@ -1,7 +1,7 @@
 ########################################################################################
 
 DESTDIR = _site
-.PHONY = all clean build install
+.PHONY = all clean build check install
 
 ########################################################################################
 
@@ -10,10 +10,13 @@ all: clean build
 build: clean
 	bundle exec jekyll build
 
+check:
+	bundle exec htmlproofer _site/
+
 play:
 	bundle exec jekyll serve --watch
 
-install: build
+install: build check
 	rm -f _site/Gemfile
 	rm -f _site/Gemfile.lock
 	rsync -aPvz --delete _site/ "$(DESTDIR)"
