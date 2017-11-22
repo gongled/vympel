@@ -32,6 +32,13 @@ $ make play
 make install DESTDIR=example.com:/var/www/html
 ```
 
+## Статус
+
+| Ветка | Статус |
+|------------|--------|
+| `master` | [![Статус](https://travis-ci.org/gongled/vympel.svg?branch=master)](https://travis-ci.org/gongled/vympel) |
+| `develop` | [![Статус](https://travis-ci.org/gongled/vympel.svg?branch=develop)](https://travis-ci.org/gongled/vympel) |
+
 ## Лицензия
 
 MIT
