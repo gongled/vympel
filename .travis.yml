@@ -12,6 +12,5 @@ script:
 env:
   global:
   - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
-  - LANG="C.UTF-8"
 
 sudo: false
