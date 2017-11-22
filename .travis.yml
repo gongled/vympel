@@ -1,6 +1,6 @@
 language: ruby
 rvm:
-- 2.0.0
+- 2.3.0
 
 before_script:
 - make deps
@@ -12,5 +12,6 @@ script:
 env:
   global:
   - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
+  - LANG="C.UTF-8"
 
 sudo: false
