@@ -11,7 +11,7 @@ build: clean
 	bundle exec jekyll build
 
 check:
-	bundle exec htmlproofer --url-ignore '^/docs' _site/
+	cd _site && bundle exec htmlproofer && cd ..
 
 play:
 	bundle exec jekyll serve --watch
