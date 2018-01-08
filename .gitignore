@@ -1,6 +1,7 @@
 .DS_Store
 _drafts
 _site
+*.retry
 .sass-cache
 .jekyll-metadata
 .bundle
