@@ -1,29 +1,36 @@
 ########################################################################################
 
 DESTDIR = _site
-.PHONY = all clean build check install
+ENV = production
+TRANSPORT = ssh
+.PHONY = all clean release update build check deploy deps
 
 ########################################################################################
 
-all: clean build
+all: release
+
+release:
+	docker-compose run --rm -u $(shell id -u) --service-ports app make build
+
+########################################################################################
+
+deploy:
+	ansible-playbook deploy.yml -i environments/$(ENV) --extra-vars="env=$(ENV)" -c $(TRANSPORT) 
+
+########################################################################################
 
 build: clean
 	bundle exec jekyll build
 
 check:
-	cd _site && bundle exec htmlproofer && cd ..
+	bundle exec htmlproofer --disable-external _site/
 
 play:
-	bundle exec jekyll serve --watch
-
-install: build check
-	rm -f _site/Gemfile
-	rm -f _site/Gemfile.lock
-	rsync -aPvz --delete _site/ "$(DESTDIR)"
+	bundle exec jekyll serve --drafts --watch --host=0.0.0.0
 
 deps:
 	gem install bundler
 	bundle install
 
 clean:
-	rm -rf _site/
+	rm -rf _site/ deploy.retry
