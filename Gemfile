@@ -15,6 +15,7 @@ gem "jekyll-gist"
 gem "jekyll-paginate"
 gem "jemoji"
 gem "html-proofer"
+gem "nokogiri", "~> 1.8.1"
 
 # This is the default theme for new Jekyll sites. You may change this to anything you like.
 # gem "minima"
