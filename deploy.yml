@@ -1,0 +1,18 @@
+---
+
+- name: Deployment 
+  hosts: app
+  vars_files:
+    - "environments/{{ env }}/group_vars/project.yml"
+  tasks:
+    - name: deploy application to working directory
+      become: yes
+      become_user: deploy
+      synchronize:
+        src: "_site/"
+        dest: "{{ app.path }}"
+        archive: yes
+        delete: yes
+        recursive: yes
+        rsync_path: "sudo -u deploy rsync"
+

@@ -1,0 +1,7 @@
+---
+
+deployment:
+    user: deploy
+
+app:
+    path: /srv/projects/vympel73.ru
