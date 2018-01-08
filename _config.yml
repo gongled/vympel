@@ -55,4 +55,4 @@ defaults:
     values:
       layout: page
 
-exclude: [vendor]
+exclude: [vendor, deploy.yml, environments, Gemfile, Gemfile.lock, Makefile, README.md, deploy.retry, Dockerfile, docker-compose.yml, ansible.cfg]
