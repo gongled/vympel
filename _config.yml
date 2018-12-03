@@ -9,7 +9,7 @@ lang: ru
 markdown: kramdown
 
 # Gems
-gems:
+plugins:
   - jekyll-sitemap
   - jekyll-paginate
   - jekyll-gist
