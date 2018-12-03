@@ -34,7 +34,7 @@ play:
 deps:
 	gem install bundler
 	bundle update
-	bundle install
+	bundle install --no-deployment
 
 clean:
 	rm -rf _site/ deploy.retry
