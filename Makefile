@@ -12,6 +12,9 @@ all: release
 release:
 	docker-compose run --rm -u $(shell id -u) --service-ports app make build
 
+demo:
+	docker-compose run --rm -u $(shell id -u) --service-ports app make play
+
 ########################################################################################
 
 deploy:
@@ -30,6 +33,7 @@ play:
 
 deps:
 	gem install bundler
+	bundle update
 	bundle install
 
 clean:
