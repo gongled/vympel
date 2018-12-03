@@ -33,7 +33,6 @@ play:
 
 deps:
 	gem install bundler
-	bundle update
 	bundle install --no-deployment
 
 clean:
