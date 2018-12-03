@@ -4,4 +4,4 @@ deployment:
     user: deploy
 
 app:
-    path: /srv/projects/vympel73.ru
+    path: /srv/projects/vympel73.ru/current
