@@ -8,7 +8,7 @@ h1, h2, h3, h4, h5, h6,
 p, ul, ol, li,
 pre,
 table, thead, tbody, tr, th, td,
-img, pre, tt, code,
+img, pre, tt, code, video,
 form, input, textarea, select, button {
   margin: 0;
   padding: 0;
@@ -46,6 +46,11 @@ textarea {
 
 code {
   white-space: pre;
+}
+
+video {
+    width: 100%;
+    border: 0;
 }
 
 img {

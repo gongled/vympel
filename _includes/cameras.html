@@ -1,0 +1,23 @@
+<script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+
+<br />
+<video id="video"></video>
+<br />
+
+<script>
+  var video = document.getElementById('video');
+  if(Hls.isSupported()) {
+    var hls = new Hls();
+    hls.loadSource('https://vympel73.ru/stream/1/media_0.m3u8');
+    hls.attachMedia(video);
+    hls.on(Hls.Events.MANIFEST_PARSED,function() {
+      video.play();
+  });
+ }
+  else if (video.canPlayType('application/vnd.apple.mpegurl')) {
+    video.src = 'https://vympel73.ru/stream/1/media_0.m3u8';
+    video.addEventListener('loadedmetadata',function() {
+      video.play();
+    });
+  }
+</script>
