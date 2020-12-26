@@ -1,4 +1,6 @@
-<p align="center"><a href="#-">Требуемое ПО</a> • <a href="#">Сборка</a> • <a href="#">Установка</a> • <a href="#">Тестирование</a> • <a href="#">Статус</a> • <a href="#">Лицензия</a></p>
+<p align="center"><a href="#-">Требуемое ПО</a> • <a href="#">Сборка</a> • <a href="#">Установка</a> • <a href="#">Тестирование</a> • <a href="#">Лицензия</a></p>
+
+[![Actions Status](https://github.com/gongled/vympel/workflows/deploy/badge.svg)](https://github.com/gongled/vympel/actions)
 
 # О проекте
 
@@ -38,14 +40,6 @@ $ docker-compose up
 ```
 
 По адресу `0.0.0.0:4000` будет доступен сайт.
-
-
-## Статус
-
-| Ветка | Статус |
-|------------|--------|
-| `master` | [![Статус](https://travis-ci.org/gongled/vympel.svg?branch=master)](https://travis-ci.org/gongled/vympel) |
-| `develop` | [![Статус](https://travis-ci.org/gongled/vympel.svg?branch=develop)](https://travis-ci.org/gongled/vympel) |
 
 ## Лицензия
 
