@@ -15,7 +15,7 @@ gem "jekyll-gist"
 gem "jekyll-paginate"
 gem "jemoji"
 gem "html-proofer"
-gem "nokogiri", "~> 1.10.8"
+gem "nokogiri", "~> 1.13.2"
 gem "ffi", ">= 1.9.24"
 
 # This is the default theme for new Jekyll sites. You may change this to anything you like.
