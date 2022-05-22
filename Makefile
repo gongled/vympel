@@ -33,7 +33,7 @@ play:
 
 deps:
 	gem install bundler
-	bundle install --no-deployment
+	bundle install --no-deployment --jobs 4 --retry 4
 
 clean:
 	rm -rf _site/ deploy.retry
