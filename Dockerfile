@@ -1,23 +1,6 @@
-FROM ruby:2.5
-
-###############################################################################
-
-LABEL name="Jekyll application" \
-      license="MIT" \
-      maintainer="Gleb E Goncharov" \
-      build-date="2018-01-08"
-
-###############################################################################
-
-ADD Gemfile* /app/
-ADD Makefile /app/
-
+FROM docker.io/library/ruby:2.6
 WORKDIR /app
-
-EXPOSE 4000
-
+ADD Makefile Gemfile Gemfile.lock /app/
 RUN make deps
-
-VOLUME ["/app"]
-
-###############################################################################
+EXPOSE 4000
+ENTRYPOINT ["bundle", "exec"]

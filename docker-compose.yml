@@ -3,14 +3,23 @@ services:
   app:
     build:
       context: .
-    command: make play
+    command:
+      - jekyll
+      - serve
+      - --drafts
+      - --watch
+      - --host=0.0.0.0
     expose:
       - 4000
     ports:
       - 4000:4000
     volumes:
       - .:/app
+      - bundle:/usr/local/bundle
     environment:
       - LANG=en_US.UTF-8
       - LANGUAGE=en_US.UTF-8
       - LC_ALL=en_US.UTF-8
+
+volumes:
+  bundle:
