@@ -87,7 +87,7 @@ GEM
     mini_portile2 (2.8.0)
     minitest (5.14.1)
     multipart-post (2.1.1)
-    nokogiri (1.13.5)
+    nokogiri (1.13.9)
       mini_portile2 (~> 2.8.0)
       racc (~> 1.4)
     octokit (4.21.0)
@@ -133,7 +133,7 @@ DEPENDENCIES
   jekyll-paginate
   jekyll-sitemap
   jemoji
-  nokogiri (~> 1.13.5)
+  nokogiri (~> 1.13.9)
 
 RUBY VERSION
    ruby 2.3.0p0
